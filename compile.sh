@@ -1,0 +1,14 @@
+rm kya.aux
+rm kya.out
+rm kya.log
+rm kya.bbl
+rm kya.blg
+pdflatex kya
+bibtex kya
+pdflatex kya
+pdflatex kya
+rm kya.aux
+rm kya.out
+rm kya.log
+rm kya.bbl
+rm kya.blg

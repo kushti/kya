@@ -1,0 +1,113 @@
+\documentclass{article}   % list options between brackets
+
+\usepackage{color}
+\usepackage{graphicx}
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%\usepackage{amsthm}
+\usepackage{amsmath}
+
+\usepackage{listings}
+
+\usepackage{hyperref}
+
+\usepackage{systeme}
+
+\def\shownotes{1}
+\def\notesinmargins{0}
+
+\ifnum\shownotes=1
+\ifnum\notesinmargins=1
+\newcommand{\authnote}[2]{\marginpar{\parbox{\marginparwidth}{\tiny %
+  \textsf{#1 {\textcolor{blue}{notes: #2}}}}}%
+  \textcolor{blue}{\textbf{\dag}}}
+\else
+\newcommand{\authnote}[2]{
+  \textsf{#1 \textcolor{blue}{: #2}}}
+\fi
+\else
+\newcommand{\authnote}[2]{}
+\fi
+
+\newcommand{\knote}[1]{{\authnote{\textcolor{green}{Alex notes}}{#1}}}
+\newcommand{\mnote}[1]{{\authnote{\textcolor{red}{Amitabh notes}}{#1}}}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+
+%\newcommand{\bruno}[1]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen]{#1}}
+
+% type user-defined commands here
+\usepackage[T1]{fontenc}
+
+\usepackage{flushend}
+
+%\usepackage{xcolor}
+
+\newcommand{\ma}{\mathcal{A}}
+\newcommand{\mb}{\mathcal{B}}
+\newcommand{\he}{\hat{e}}
+\newcommand{\sr}{\stackrel}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\state}{state}
+
+\newcommand{\ignore}[1]{} 
+\newcommand{\full}[1]{}
+\newcommand{\notfull}[1]{#1}
+\newcommand{\rand}{\stackrel{R}{\leftarrow}}
+\newcommand{\mypar}[1]{\smallskip\noindent\textbf{#1.}}
+
+\begin{document}
+
+\title{Know Your Assumptions}
+\author{Alexander Chepurnoy, Amitabh Saxena}
+
+
+\maketitle
+
+\begin{abstract}
+In this paper, we consider a new stablecoin design called \em{Dexy}.
+\end{abstract}
+
+% \input{intro}
+
+\section{Introduction}
+
+
+
+
+\section{General Design}
+
+
+\section{Notation}
+
+
+
+
+%\input{intro-props}
+%\input{intro-scorex}
+%\input{intro-contrib}
+%\input{related-work}
+%\input{intro-org}
+%\input{sec-scorex}
+%\input{sec-props}
+%\input{sec-examples}
+%\input{conclusion}
+
+\section*{Acknowledgments}
+
+Authors would like to thank.
+
+\bibliographystyle{IEEEtran}
+\bibliography{sources, ref}
+
+%Appendices
+
+%\newpage
+%\appendix
+%\input{apx-tests}
+
+
+\end{document}
